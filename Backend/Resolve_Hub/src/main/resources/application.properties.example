@@ -1,0 +1,23 @@
+spring.application.name=resolve_hub
+
+# ---------- Database (PostgreSQL) ----------
+spring.datasource.url=jdbc:postgresql://localhost:5432/resolve_hub
+spring.datasource.username=postgres
+spring.datasource.password=root
+
+# "update" lets Hibernate create/alter tables from the @Entity classes.
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.show-sql=true
+
+# ---------- JWT ----------
+# Base64-encoded secret used to sign tokens. Never commit the real one.
+jwt.secret=pY3X+fK0ZpZ1zK0nQeYFq2b7Kz6y5y0R7mGxR8cZx9Q=
+# Token lifetime in milliseconds (3600000 = 1 hour)
+jwt.expiration=3600000
+
+# ---------- CORS ----------
+# Origins (React dev servers) allowed to call this API from the browser.
+app.cors.allowed-origins=http://localhost:5173,http://localhost:3000
+
+server.port=8081
