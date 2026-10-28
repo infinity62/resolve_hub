@@ -1,0 +1,22 @@
+# Backend build output
+target/
+*.class
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Secrets (PDF rule 8)
+**/application.properties
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
